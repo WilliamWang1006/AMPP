@@ -12,6 +12,7 @@ This is a Web based 3D Printing process planning software.
 **How to import**
 - IDE: Eclipse
 - Put "getpara.dll" in the java.library.path.
+- Set the file upload path in "src\main\resources\config\application.properties".
 - Run!
 
 ## Version Control

@@ -1,0 +1,72 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.niiam</groupId>
+  <artifactId>AMPP</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>AMPP Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  
+  <!-- 引入springboot组件 -->
+  <parent>
+  	<groupId>org.springframework.boot</groupId>
+  		<artifactId>spring-boot-starter-parent</artifactId>
+  		<version>1.5.9.RELEASE</version>
+  </parent>
+  
+  <dependencies>
+    <dependency>
+         <groupId>org.springframework.boot</groupId>
+         <artifactId>spring-boot-starter-web</artifactId>
+     </dependency>
+     <dependency>
+         <groupId>org.springframework.boot</groupId>
+         <artifactId>spring-boot-starter-test</artifactId>
+         <scope>test</scope>
+     </dependency>
+     <!-- 引入json组件 -->
+     <dependency>
+         <groupId>com.jayway.jsonpath</groupId>
+         <artifactId>json-path</artifactId>
+         <scope>test</scope>
+     </dependency>
+     
+	<!-- 使得内嵌的Tomcat不可见，用于导出war包 -->
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-tomcat</artifactId>
+		<scope>provided</scope>
+	</dependency>
+  </dependencies>
+  
+  <!-- 制定Java编译版本，用于消除IDE关于JRE版本的warning -->
+  <properties>
+        <java.version>9</java.version>
+  </properties>
+  
+  <build>
+    <finalName>AMPP</finalName>
+    <plugins>
+		<plugin>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-maven-plugin</artifactId>
+		</plugin>
+	</plugins>
+  </build>
+  
+  <repositories>
+	<repository>
+		<id>spring-releases</id>
+		<url>https://repo.spring.io/libs-release</url>
+	</repository>
+  </repositories>
+  <pluginRepositories>
+	<pluginRepository>
+		<id>spring-releases</id>
+		<url>https://repo.spring.io/libs-release</url>
+	</pluginRepository>
+  </pluginRepositories>
+  
+  
+</project>

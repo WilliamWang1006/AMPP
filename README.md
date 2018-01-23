@@ -7,6 +7,11 @@
 	- Model upload
 	- Model view using Three.js
 	- Get model height using C++ based dll file
+
+	**How to import**
+	IDE: Eclipse
+	Put "getpara.dll" in the java.library.path.
+	Run!
 	
 ##Version Control
 

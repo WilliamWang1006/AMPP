@@ -1,22 +1,21 @@
 # AMPP
 
-##Introduction
-	This is a Web based 3D Printing process planning software. 
+## Introduction
 
-	**Features**
-	- Model upload
-	- Model view using Three.js
-	- Get model height using C++ based dll file
+This is a Web based 3D Printing process planning software.
 
-	**How to import**
-	IDE: Eclipse
-	Put "getpara.dll" in the java.library.path.
-	Run!
-	
+**Features**
+- Model upload
+- Model view using Three.js
+- Get model height using C++ based dll file
+
+**How to import**
+IDE: Eclipse
+Put "getpara.dll" in the java.library.path.
+Run!
+
 ##Version Control
-
 *2018.1.23*
-
 1. Simple BootStrap based Web UI.
 2. File upload function. Solid path. Editable in the "src\main\resources\config\application.properties".
 3. Model view, using Three.js.
